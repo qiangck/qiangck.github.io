@@ -6,19 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="//qiangck.club">
-  <title>Archives: 2019/4 | 贾小强的博客</title>
+  <title>jQuery $.ajax详解使用方法 | 贾小强的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="在痛苦中成长，在成长中感受痛苦">
-<meta name="keywords" content="javascript,nodejs,vue,react,html,webpack,fe,开发,Developer,js">
-<meta property="og:type" content="website">
-<meta property="og:title" content="贾小强的博客">
-<meta property="og:url" content="//qiangck.club/archives/2019/04/index.html">
+  <meta name="description" content="$.ajax快捷方法 $.get(url,[data],[callback],[type])$.post(url,[data],[callback],[type])    两种方法请求方式不同，其他方式相同  参数：url[请求地址]，data[请求的数据内容(obj对象)]，callback[回调函数(只能处理请求成功事件)]，type[请求返回数据的编码格式(默认ContentType指定格式">
+<meta name="keywords" content="$.ajax">
+<meta property="og:type" content="article">
+<meta property="og:title" content="jQuery $.ajax详解使用方法">
+<meta property="og:url" content="//qiangck.club/2015/11/03/jQuery-ajax详解使用方法/index.html">
 <meta property="og:site_name" content="贾小强的博客">
-<meta property="og:description" content="在痛苦中成长，在成长中感受痛苦">
+<meta property="og:description" content="$.ajax快捷方法 $.get(url,[data],[callback],[type])$.post(url,[data],[callback],[type])    两种方法请求方式不同，其他方式相同  参数：url[请求地址]，data[请求的数据内容(obj对象)]，callback[回调函数(只能处理请求成功事件)]，type[请求返回数据的编码格式(默认ContentType指定格式">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-04-12T16:02:38.904Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="贾小强的博客">
-<meta name="twitter:description" content="在痛苦中成长，在成长中感受痛苦">
+<meta name="twitter:title" content="jQuery $.ajax详解使用方法">
+<meta name="twitter:description" content="$.ajax快捷方法 $.get(url,[data],[callback],[type])$.post(url,[data],[callback],[type])    两种方法请求方式不同，其他方式相同  参数：url[请求地址]，data[请求的数据内容(obj对象)]，callback[回调函数(只能处理请求成功事件)]，type[请求返回数据的编码格式(默认ContentType指定格式">
   
     <link rel="alternative" href="/atom.xml" title="贾小强的博客" type="application/atom+xml">
   
@@ -144,71 +145,281 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-jQuery-ajax详解使用方法" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/04/11/hello-world/" class="archive-article-date">
-  	<time datetime="2019-04-11T09:39:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-11</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/04/11/hello-world/">Hello World</a>
+    <h1 class="article-title" itemprop="name">
+      jQuery $.ajax详解使用方法
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2015/11/03/jQuery-ajax详解使用方法/" class="archive-article-date">
+  	<time datetime="2015-11-02T20:29:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-11-02</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="ajax快捷方法"><a href="#ajax快捷方法" class="headerlink" title="$.ajax快捷方法"></a>$.ajax快捷方法</h3><blockquote>
+<p>$.get(url,[data],[callback],[type])<br>$.post(url,[data],[callback],[type])</p>
+</blockquote>
+<p>  两种方法请求方式不同，其他方式相同<br>  参数：url[请求地址]，data[请求的数据内容(obj对象)]，callback[回调函数(只能处理请求成功事件)]，<br>type[请求返回数据的编码格式(默认ContentType指定格式)]</p>
+  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$.<span class="keyword">get</span>('/test?x=1');</span><br><span class="line">$.<span class="keyword">get</span>('/test',&#123;z:<span class="number">2</span>&#125;);</span><br><span class="line">$.post(<span class="string">'/test'</span>,&#123;<span class="attr">y</span>:<span class="number">2</span>&#125;);</span><br><span class="line">$.<span class="keyword">get</span>('/user',function(data,callbacktype,jqXHR)&#123;</span><br><span class="line">  data<span class="comment">//返回数据</span></span><br><span class="line">  callbacktype<span class="comment">//返回数据的状态信息(字符串)</span></span><br><span class="line">  jqXHR<span class="comment">//jQuery封装的XHR对象</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>$(selector).load(url,[data],[callback])</p>
+</blockquote>
+<p>  将页面片段载入到selector的容器里面</p>
+  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">"#content"</span>).load(<span class="string">'/user'</span>);</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>$.getJSON(url,[data],[callback])</p>
+</blockquote>
+<p>  如果是JSON数据回调会成功，否则失败</p>
+  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$.getJSON(<span class="string">'/test'</span>,&#123;<span class="attr">type</span>:<span class="number">1</span>&#125;,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(argument)</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>$.getScript(url,[claaback])</p>
+</blockquote>
+<p>  动态加载脚本文件</p>
+  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$.gerScript(<span class="string">'/js/test.js'</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  alert(test(<span class="number">1</span>,<span class="number">2</span>));</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h3 id="ajax详细使用方法"><a href="#ajax详细使用方法" class="headerlink" title="$.ajax详细使用方法"></a>$.ajax详细使用方法</h3><blockquote>
+<p>$.ajax(url,[settings]);</p>
+</blockquote>
+  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$.ajax(&#123;</span><br><span class="line">  url:<span class="string">'/test'</span>,</span><br><span class="line">  success:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">      alert(<span class="string">'ok'</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>  处理响应结果的回调函数：</p>
+<p>  success[成功]，error[请求失败]，<br>  statusCode[指明返回的状态码的回调函数],<br>  complete[请求返回前的回调函数(处理返回不同状态码的请求)]</p>
+  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">$.ajax(<span class="string">'/test'</span>,&#123;</span><br><span class="line">  success:<span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="built_in">arguments</span>);</span><br><span class="line">  &#125;,</span><br><span class="line">  error:<span class="function"><span class="keyword">function</span>(<span class="params">jqXHR,textStatus,err</span>)</span>&#123;</span><br><span class="line">    <span class="comment">//jqXHR:jQuery增强的XHR</span></span><br><span class="line">    <span class="comment">//textStatus:请求完成状态</span></span><br><span class="line">    <span class="comment">//err:底层通过throw抛出的异常对象，类型与值与错误类型有关</span></span><br><span class="line">    <span class="built_in">console</span>.log(<span class="built_in">arguments</span>);</span><br><span class="line">  &#125;,</span><br><span class="line">  complete:<span class="function"><span class="keyword">function</span>(<span class="params">jqXHR,textStatus</span>)</span>&#123;</span><br><span class="line">    <span class="comment">//jqXHR:jQuery增强的XHR</span></span><br><span class="line">    <span class="comment">//textStatus：请求完成状态success | error</span></span><br><span class="line">    <span class="built_in">console</span>.log(<span class="built_in">arguments</span>);</span><br><span class="line">  &#125;,</span><br><span class="line">  statusCode:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="string">'403'</span>:<span class="function"><span class="keyword">function</span>(<span class="params">jqXHR,textStatus,err</span>)</span>&#123;</span><br><span class="line">      <span class="comment">//jqXHR:jQuery增强的XHR</span></span><br><span class="line">      <span class="comment">//textStatus:请求完成状态</span></span><br><span class="line">      <span class="comment">//err:底层通过throw抛出的异常对象，类型与值与错误类型有关</span></span><br><span class="line">      <span class="built_in">console</span>.log(<span class="built_in">arguments</span>);</span><br><span class="line">      <span class="built_in">console</span>.log(<span class="number">400</span>);</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="string">'400'</span>:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">      <span class="built_in">console</span>.log(<span class="number">400</span>);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;      </span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>  请求的数据：data,processData,contentType,traditional</p>
+  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">$.ajax(<span class="string">'/test'</span>,&#123;</span><br><span class="line">  <span class="comment">//请求的数据内容</span></span><br><span class="line">  data:&#123;</span><br><span class="line">    a:<span class="number">1</span>,</span><br><span class="line">    b:<span class="number">2</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="comment">//请求的方式</span></span><br><span class="line">  type:<span class="string">'POST'</span>,</span><br><span class="line">  <span class="comment">//是否对请求的数据进行转码(用于传输数据为html节点内容)</span></span><br><span class="line">  processData:<span class="literal">true</span>,</span><br><span class="line">  <span class="comment">//当前的数据是否使用传统方式进行url编码</span></span><br><span class="line">  traditional:<span class="literal">true</span>,</span><br><span class="line">  <span class="comment">//请求数据编码格式</span></span><br><span class="line">  contentType:<span class="string">'application/json'</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>  响应数据：dataType,dataFilter</p>
+  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">$.ajax(<span class="string">'/test'</span>,&#123;</span><br><span class="line">  success:<span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="keyword">typeof</span> data)</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="comment">//定义的返回数据的类型</span></span><br><span class="line">  dataType:<span class="string">'json | html | text | jsonp | script'</span>,</span><br><span class="line">  <span class="comment">//返回底层的原始数据进行预处理</span></span><br><span class="line">  dataFilter:<span class="function"><span class="keyword">function</span>(<span class="params">data,type</span>)</span>&#123;</span><br><span class="line">    <span class="comment">//data:原始数据</span></span><br><span class="line">    <span class="comment">//type:指定的数据类型</span></span><br><span class="line">  &#125;   </span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>  前置处理：beforeSend</p>
+  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">$.ajax(<span class="string">'/test'</span>,&#123;</span><br><span class="line">  beforeSend:<span class="function"><span class="keyword">function</span>(<span class="params">jqXHR,settings</span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="built_in">arguments</span>);</span><br><span class="line">    jqXHR.setRequestHeader(<span class="string">'test'</span>,<span class="string">'haha'</span>);</span><br><span class="line">    jqXHR.testData = &#123;<span class="attr">a</span>:<span class="number">1</span>,<span class="attr">b</span>:<span class="number">2</span>&#125;;</span><br><span class="line">  &#125;,</span><br><span class="line">  complete:<span class="function"><span class="keyword">function</span>(<span class="params">jqXHR</span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(jqXHR.testData)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>  请求类型：GET(默认) | POST | PUT | DELETE<br>  同步异步：async(默认true)<br>  是否缓存：cache(默认true)<br>  其他参数：</p>
+<ul>
+<li>global：是否触发全局事件</li>
+<li>ifModifed：仅在服务器数据改变时候加载数据</li>
+<li>username,password：http需要验证时候</li>
+<li>timeout：设置请求超时时间，若请求超时触发error</li>
+<li>context：回调中this指向的对象</li>
+</ul>
+<h3 id="其他相关的API"><a href="#其他相关的API" class="headerlink" title="其他相关的API"></a>其他相关的API</h3><blockquote>
+<p>$.ajaxSetup(option)</p>
+</blockquote>
+<p>  设置全局默认参数</p>
+  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//默认为get请求</span></span><br><span class="line">$.ajax(<span class="string">'/test'</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//修改全局请求方式为post</span></span><br><span class="line">$.ajaxSetup(&#123;</span><br><span class="line">  type:<span class="string">'post'</span>,</span><br><span class="line">  headers:&#123;</span><br><span class="line">    test:<span class="keyword">new</span> <span class="built_in">Date</span>().getTime</span><br><span class="line">  &#125;,</span><br><span class="line">  cache:<span class="literal">false</span></span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">//请求方式改变为post</span></span><br><span class="line">$.ajax(<span class="string">'/test'</span>);</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>$.ajaxPrefilter([dataTypes],handler(option,originalOptions,jqXHR))</p>
+</blockquote>
+<p>  请求发起前的预处理，提供了一种AOP(面向切面)编程模式，常见用途：</p>
+<ul>
+<li>根据option设定执行特定处理逻辑</li>
+<li>修改option值改变请求默认行为</li>
+<li><p>通过return修改默认dataType</p>
+<p>例：通过return修改默认dataType</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">$.ajaxPrefilter(<span class="string">'text html json'</span>,<span class="function"><span class="keyword">function</span>(<span class="params">options,originalOptions,jqXHR</span>)</span>&#123;</span><br><span class="line">  <span class="comment">//options请求参数，含默认值</span></span><br><span class="line">  <span class="comment">//originalOptions请求时传入的参数，不含默认值</span></span><br><span class="line">  <span class="comment">//jqXHR:jQuery增强的XHR</span></span><br><span class="line">  <span class="built_in">console</span>.log(<span class="built_in">arguments</span>);</span><br><span class="line">  <span class="keyword">if</span>(options.url == <span class="string">'/test'</span>)&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">'text'</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">$.ajax(<span class="string">'/test'</span>,&#123;</span><br><span class="line">  type:<span class="string">'post'</span>,</span><br><span class="line">  dataType:<span class="string">'text'</span>,</span><br><span class="line">  <span class="comment">//自定义属性</span></span><br><span class="line">  test:<span class="string">'haha'</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>例：多次请求仅最后一次有效，避免多次请求导致的数据混乱</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> requests = &#123;&#125;;</span><br><span class="line">$.ajaxPrefilter(<span class="function"><span class="keyword">function</span>(<span class="params">options,originalOptions,jqXHR</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">if</span>(requests[options.url])&#123;</span><br><span class="line">    requests[options.url].abort();</span><br><span class="line">  &#125;</span><br><span class="line">  requests[options.url] = jqXHR;</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">$.ajax(<span class="string">'/test/'</span>); <span class="comment">// 第一次</span></span><br><span class="line">$.ajax(<span class="string">'/test/'</span>); <span class="comment">// 第二次</span></span><br></pre></td></tr></table></figure>
+<p>例：统一修改请求路径</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">$.ajaxPrefilter(<span class="function"><span class="keyword">function</span>(<span class="params">options</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">if</span>(options.url.substr(<span class="number">0</span>,<span class="number">5</span>) == <span class="string">'/usr'</span>)&#123;</span><br><span class="line">    options.url = options.url.replace(<span class="string">'/usr/'</span>,<span class="string">'/user/'</span>);</span><br><span class="line">    options.header = &#123;</span><br><span class="line">      a:<span class="number">1</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">$.ajax(<span class="string">'/usr/'</span>);</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="全局事件"><a href="#全局事件" class="headerlink" title="全局事件"></a>全局事件</h3><p>  jQuery-1.9以后，全局事件必须绑定在document上</p>
+<ul>
+<li>$(document).ajaxSuccess(globalEventHander);</li>
+<li>$(document).ajaxError(globalEventHander);</li>
+<li>$(document).ajaxComplete(globalEventHander);</li>
+<li>$(document).ajaxStart(globalEventHander);</li>
+<li>$(document).ajaxStop(globalEventHander);</li>
+<li><p>$(document).ajaxSend(globalEventHander);</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">globalEventHander</span>(<span class="params">event</span>)</span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="built_in">arguments</span>);</span><br><span class="line">  <span class="built_in">console</span>.log(event.type);</span><br><span class="line">&#125;</span><br><span class="line">$.ajax(<span class="string">'/test?err=y'</span>);<span class="comment">//请求成功</span></span><br><span class="line">$.ajax(<span class="string">'/test?err=n'</span>);<span class="comment">//请求失败</span></span><br></pre></td></tr></table></figure>
+<p>请求顺序:<br>1.ajaxStart<br>2.ajaxSend<br>3.ajaxSuccess<br>4.ajaxError<br>5.ajaxComplete<br>6.ajaxStop</p>
+</li>
+</ul>
+<h3 id="序列化"><a href="#序列化" class="headerlink" title="序列化"></a>序列化</h3><ul>
+<li>param：序列化一个 key/value 对象</li>
+<li>serialize：通过序列化表单值，创建 URL 编码文本字符串</li>
+<li><p>serializeArray：通过序列化表单值来创建对象数组(名称和值)</p>
+<p>例：param()</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> params = &#123; <span class="attr">a</span>:<span class="number">1</span>, <span class="attr">b</span>:<span class="number">2</span> &#125;;</span><br><span class="line"><span class="keyword">var</span> str = $.param(params);</span><br><span class="line"><span class="built_in">console</span>.log(str); <span class="comment">//a=1&amp;b=2"</span></span><br></pre></td></tr></table></figure>
+<p>例：serialize()</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">name</span>=<span class="string">"a"</span> <span class="attr">value</span>=<span class="string">"1"</span>/&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">name</span>=<span class="string">"b"</span> <span class="attr">value</span>=<span class="string">"2"</span>/&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"hidden"</span> <span class="attr">name</span>=<span class="string">"c"</span> <span class="attr">value</span>=<span class="string">"3"</span>/&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="javascript">  $(<span class="string">'form'</span>).submit(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">    <span class="built_in">console</span>.log($(<span class="keyword">this</span>).serialize()); <span class="comment">//a=1&amp;b=2&amp;c=3</span></span></span><br><span class="line"><span class="javascript">    <span class="keyword">return</span> <span class="literal">false</span>;</span></span><br><span class="line"><span class="undefined">  &#125;);</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>例：serializeArray()</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span>&gt;</span></span><br><span class="line">  First:<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">name</span>=<span class="string">"First"</span> <span class="attr">value</span>=<span class="string">"1"</span> /&gt;</span><span class="tag">&lt;<span class="name">br</span> /&gt;</span></span><br><span class="line">  Last :<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">name</span>=<span class="string">"Last"</span> <span class="attr">value</span>=<span class="string">"2"</span> /&gt;</span><span class="tag">&lt;<span class="name">br</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="javascript">  $(<span class="string">'form'</span>).click(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span></span><br><span class="line"><span class="javascript">    x=$(<span class="string">"form"</span>).serializeArray();</span></span><br><span class="line"><span class="javascript">    <span class="built_in">console</span>.log(x); <span class="comment">//&#123;[name:First,value:1],[name:Last,value:2]&#125;</span></span></span><br><span class="line"><span class="undefined">  &#125;);</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>赏口饭吃吧客官老爷<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/images/zhifubao.png">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/images/weixin.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">new tags</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">$.ajax</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/dddd//" class="article-tag-list-link color5">dddd</a>
+        			<a href="/categories/jQuery//" class="article-tag-list-link color2">jQuery</a>
         		</li>
       		
 		</ul>
 	</div>
 
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACNklEQVR42u3aSW7DQAwFUd//0somiwCxpPqkZEPs6pXhaOjnBdMcXi+8tj9r76971/+/9/jz3lsuWDJkyHgsYztcey/Yu5I/mTyN3CtDhox1GMdhtHYN53XeK0OGDBnk8Hf8DXkm+SxDhgwZnMGPbvyo94WAK0OGjAcyeIGMhN30gMhT5QtycRkyZDyQwavun/98S39DhgwZj2Js4eKBkgTc/n5+nyxDhozRDP6alMQDNz9Kngx/yJAhYygjDaOdIYz0mmBQTIYMGcsweGBNy158o2nJ703AlSFDxjhGLezWvk+bCuQ5MmTIWI3RSUd5YK2NXJB/CTJkyJjKSAe/0lBLGgYcfEF/VYYMGY9ldFqMnM1bmzxVftOJlSFDxjhGugn+0HQraTJ80omVIUPGIEYwdEWyYZDKFktpaRYuQ4aMcQx+Mx+w4M3IzqDYSSdWhgwZQxnk5trqwOKZERkyZAxlpEWxtMFQS1yLhTYZMmQMYpAyWe0ajuy0DWTIkLEOg5e3yNY/k8TKkCFjNQZpBtzRwuyPhZ10OWTIkDGU0S+TkbYBD/c8eZYhQ8YKjE6CmrYQancFZ1sZMmQMYmzhOi7fp+Nl/GknLQcZMmSMZtw9KsG3W2uIxhgZMmQ8llFrAPB2I9kiqfCf/PYyZMhYgJEOSaSBOA2mrVxchgwZMsIUlxf1Wq0CGTJkyAhflh4K+6NmMmTIWIHBw2iNdFUg3v2xZMiQMZpRSx077YGrSngyZMhYgPEDigWTYa9XSXQAAAAASUVORK5CYII=" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2015/11/03/Deferred对象与异步编程/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Deferred对象与异步编程
+        
+      </div>
+    </a>
   
   
-    </div></section>
+    <a href="/2015/10/31/HTML5-Audio-Video-使用方法汇总/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">HTML5 Audio/Video 使用方法汇总</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -232,8 +443,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

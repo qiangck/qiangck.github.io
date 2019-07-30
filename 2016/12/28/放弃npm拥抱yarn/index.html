@@ -6,19 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="//qiangck.club">
-  <title>Archives: 2019/4 | 贾小强的博客</title>
+  <title>放弃npm拥抱yarn | 贾小强的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="在痛苦中成长，在成长中感受痛苦">
-<meta name="keywords" content="javascript,nodejs,vue,react,html,webpack,fe,开发,Developer,js">
-<meta property="og:type" content="website">
-<meta property="og:title" content="贾小强的博客">
-<meta property="og:url" content="//qiangck.club/archives/2019/04/index.html">
+  <meta name="description" content="yarn介绍  Yarn 是Facebook最近发布的一款依赖包安装工具. 官方认为其快速, 安全, 可靠。你下载的包将不再重新下载。而且确保在不同系统中可以正常工作。(Yarn is a package manager for your code. It allows you to use and share code with other developers from around the">
+<meta name="keywords" content="yarn">
+<meta property="og:type" content="article">
+<meta property="og:title" content="放弃npm拥抱yarn">
+<meta property="og:url" content="//qiangck.club/2016/12/28/放弃npm拥抱yarn/index.html">
 <meta property="og:site_name" content="贾小强的博客">
-<meta property="og:description" content="在痛苦中成长，在成长中感受痛苦">
+<meta property="og:description" content="yarn介绍  Yarn 是Facebook最近发布的一款依赖包安装工具. 官方认为其快速, 安全, 可靠。你下载的包将不再重新下载。而且确保在不同系统中可以正常工作。(Yarn is a package manager for your code. It allows you to use and share code with other developers from around the">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-04-12T16:02:37.039Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="贾小强的博客">
-<meta name="twitter:description" content="在痛苦中成长，在成长中感受痛苦">
+<meta name="twitter:title" content="放弃npm拥抱yarn">
+<meta name="twitter:description" content="yarn介绍  Yarn 是Facebook最近发布的一款依赖包安装工具. 官方认为其快速, 安全, 可靠。你下载的包将不再重新下载。而且确保在不同系统中可以正常工作。(Yarn is a package manager for your code. It allows you to use and share code with other developers from around the">
   
     <link rel="alternative" href="/atom.xml" title="贾小强的博客" type="application/atom+xml">
   
@@ -144,71 +145,205 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-放弃npm拥抱yarn" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/04/11/hello-world/" class="archive-article-date">
-  	<time datetime="2019-04-11T09:39:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-11</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/04/11/hello-world/">Hello World</a>
+    <h1 class="article-title" itemprop="name">
+      放弃npm拥抱yarn
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2016/12/28/放弃npm拥抱yarn/" class="archive-article-date">
+  	<time datetime="2016-12-28T15:50:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-12-28</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="yarn介绍"><a href="#yarn介绍" class="headerlink" title="yarn介绍"></a>yarn介绍</h3><p>  Yarn 是Facebook最近发布的一款依赖包安装工具. 官方认为其快速, 安全, 可靠。你下载的包将不再重新下载。而且确保在不同系统中可以正常工作。(<strong>Yarn is a package manager for your code. It allows you to use and share code with other developers from around the world. Yarn does this quickly, securely, and reliably so you don’t ever have to worry.</strong>)</p>
+<h3 id="yarn优点"><a href="#yarn优点" class="headerlink" title="yarn优点"></a>yarn优点</h3><ul>
+<li>一致性：Yarn允许使用某个lockfile来保证团队中的所有人使用相同版本的npm依赖包，这一点会大大减少因为某个人系统本身问题而导致的Bug</li>
+<li>多样性： Yarn还允许用户将npm包以tar.gz形式打包上传到版本控制系统中，这一点能够利用NPM包本身已经对不同版本的Node或者操作系统做了容错这一特性</li>
+<li>离线： Yarn允许离线安装某些依赖，这点对于CI系统特别适用。CI系统就不需要保证有稳定的网络连接，特别是在有墙的地方</li>
+<li>速度： Yarn采用了新的算法来保证速度， 比NPM快到2~7倍， 同时也允许使用离线包的方式本地安装依赖</li>
+<li>安全： 下载前会检查签名及包的完整性</li>
+<li>网络优化 ：力求网络资源最大利用化，让资源下载完美队列执行，避免大量的无用请求，下载失败会自动重新请求，避免整个安装过程失败</li>
+<li>扁平化： 对于不匹配的依赖版本的包创立一个独立的包，避免创建重复的</li>
+<li>缓存：缓存已经下载过的包，避免重复下载</li>
+</ul>
+<h3 id="yarn命令"><a href="#yarn命令" class="headerlink" title="yarn命令"></a>yarn命令</h3><p>  <code>yarn init</code>: 初始化某个项目<br>  <code>yarn install/link</code>: 默认的安装依赖操作<br>  <code>yarn add taco</code>: 安装某个依赖，并且默认保存到package<br>  <code>yarn remove taco</code>: 移除某个依赖项目<br>  <code>yarn add taco —dev</code>: 安装某个开发时依赖项目<br>  <code>yarn upgrade taco</code>: 更新某个依赖项目<br>  <code>yarn global add taco</code>: 安装某个全局依赖项目<br>  <code>yarn publish/login/logout</code>: 发布/登录/登出，一系列NPM Registry操作<br>  <code>yarn run/test</code>: 运行某个命令</p>
+<h3 id="yarn安装"><a href="#yarn安装" class="headerlink" title="yarn安装"></a>yarn安装</h3><p>  这里我只说mac的安装方法，win安装较为简单，可以使用npm的方式安装。</p>
+<p>  1.安装Homebrew包管理工具，方便快捷，一条指令即可安装完成。</p>
+<blockquote>
+<p>/usr/bin/ruby -e “$(curl -fsSL <a href="https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;" target="_blank" rel="noopener">https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;</a></p>
+</blockquote>
+<p>  2.安装yarn。<br>  <code>brew update</code><br>  <code>brew install yarn</code></p>
+<p>  3.验证安装是否完成，如果有显示版本号说明安装完成。<br>  <code>yarn --version</code></p>
+<h3 id="开始使用yarn"><a href="#开始使用yarn" class="headerlink" title="开始使用yarn"></a>开始使用yarn</h3><p>  如果已有repo，则删除node_modules，使用“yarn”命令进行重新安装；如果新repo则直接使用“yarn“命令安装，可以对npm项目进行无缝衔接<br>  <code>rm -rf node_modules</code><br>  <code>yarn</code></p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>赏口饭吃吧客官老爷<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/images/zhifubao.png">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/images/weixin.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">new tags</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">yarn</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/dddd//" class="article-tag-list-link color5">dddd</a>
-        		</li>
-      		
-		</ul>
-	</div>
+      
 
+      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACLUlEQVR42u3aQW7DMAwEwPz/0y5Q9JBDY+9KTtFIo1NgpJYmB5Yi+XjE6/hez5+fV/7N/PuPdywMDIyPZRyn63yD5Pn5sfJ9L96JgYGxAWMsyJ4/T44+9h4MDAyMV4yc1AbWcx4GBgbGPKNNK5OrLAYGBsbYJTbZuA2gYwU7DAyM3RhjjYG/+fz2/gYGBsa/Zxzlyotl7XV0LPX8+SsMDIylGTPF/bZVmRy6ja7RUTAwMJZgzBfU2uvofCMzGrnAwMBYgjGTwOWthfkgfhGgMTAwlmbMj4LNl/Jvu8RiYGAszUhSveTQSRrXDnYM3sUxMDAWYpwDkiQsD7v3NkovLrEYGBgLMdqaXFG9K8ttbRD/5TkGBsaijKTQn4TjtqA2M+t10RjAwMBYmpEX+tui29ibix0xMDA2YyQl+Hzkoh3RGNsFAwNjB0Zbvs8LcDPtgXyYDAMDY21GnuS1YxltOyG/KmNgYOzMSIr1bdhtW5h5UoiBgbEbIw987ShY26psB8Wi/x4YGBgfzhhrXuYJ3ExAL9qlGBgY2zDyJkELGyvDFQklBgbG0oykoJ8PPSQbDx4ufwMGBsZyjKNc97Yk22GOl+EeAwNjacZYmGu3GWuI3nZ0DAyMJRhtEGyL+G1Lsr02Y2Bg7MN4x+Ha4YypUQwMDAyM+Ljt6MZtPx8GBgZGnDK2LYSx0IyBgbEno73E5gWy+ftmFLgxMDCWZoyNOORpYtvabH84DAyMpRlfrsbMUpAkjcAAAAAASUVORK5CYII=" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2019/04/11/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Hello World
+        
+      </div>
+    </a>
   
   
-    </div></section>
+    <a href="/2016/06/15/HTML5-WebSocket介绍/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">HTML5 WebSocket介绍</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -232,8 +367,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

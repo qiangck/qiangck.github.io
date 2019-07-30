@@ -6,19 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="//qiangck.club">
-  <title>Archives: 2019/4 | 贾小强的博客</title>
+  <title>favicon.ico重复请求问题 | 贾小强的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="在痛苦中成长，在成长中感受痛苦">
-<meta name="keywords" content="javascript,nodejs,vue,react,html,webpack,fe,开发,Developer,js">
-<meta property="og:type" content="website">
-<meta property="og:title" content="贾小强的博客">
-<meta property="og:url" content="//qiangck.club/archives/2019/04/index.html">
+  <meta name="description" content="favicon.ico图标用于收藏夹图标和浏览器标签上的显示，如果不设置，浏览器会请求网站根目录的这个图标，如果网站根目录也没有这图标会产生 404的请求，并会重复请求，出于优化的考虑，要么就有这个图标，要么就禁止产生这个请求，在移动端下不希望产生favicon.ico的请求，可以在页面的’‘区域，加上如下代码实现屏蔽：1234&amp;lt;!-- 简洁版 --&amp;gt;&amp;lt;link rel=&quot;ico">
+<meta name="keywords" content="解决方案,meta">
+<meta property="og:type" content="article">
+<meta property="og:title" content="favicon.ico重复请求问题">
+<meta property="og:url" content="//qiangck.club/2016/04/03/favicon-ico重复请求问题/index.html">
 <meta property="og:site_name" content="贾小强的博客">
-<meta property="og:description" content="在痛苦中成长，在成长中感受痛苦">
+<meta property="og:description" content="favicon.ico图标用于收藏夹图标和浏览器标签上的显示，如果不设置，浏览器会请求网站根目录的这个图标，如果网站根目录也没有这图标会产生 404的请求，并会重复请求，出于优化的考虑，要么就有这个图标，要么就禁止产生这个请求，在移动端下不希望产生favicon.ico的请求，可以在页面的’‘区域，加上如下代码实现屏蔽：1234&amp;lt;!-- 简洁版 --&amp;gt;&amp;lt;link rel=&quot;ico">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-04-12T16:02:37.904Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="贾小强的博客">
-<meta name="twitter:description" content="在痛苦中成长，在成长中感受痛苦">
+<meta name="twitter:title" content="favicon.ico重复请求问题">
+<meta name="twitter:description" content="favicon.ico图标用于收藏夹图标和浏览器标签上的显示，如果不设置，浏览器会请求网站根目录的这个图标，如果网站根目录也没有这图标会产生 404的请求，并会重复请求，出于优化的考虑，要么就有这个图标，要么就禁止产生这个请求，在移动端下不希望产生favicon.ico的请求，可以在页面的’‘区域，加上如下代码实现屏蔽：1234&amp;lt;!-- 简洁版 --&amp;gt;&amp;lt;link rel=&quot;ico">
   
     <link rel="alternative" href="/atom.xml" title="贾小强的博客" type="application/atom+xml">
   
@@ -144,71 +145,201 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-favicon-ico重复请求问题" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/04/11/hello-world/" class="archive-article-date">
-  	<time datetime="2019-04-11T09:39:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-11</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/04/11/hello-world/">Hello World</a>
+    <h1 class="article-title" itemprop="name">
+      favicon.ico重复请求问题
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2016/04/03/favicon-ico重复请求问题/" class="archive-article-date">
+  	<time datetime="2016-04-02T17:44:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-04-02</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>favicon.ico图标用于收藏夹图标和浏览器标签上的显示，如果不设置，浏览器会请求网站根目录的这个图标，如果网站根目录也没有这图标会产生 404的请求，并会重复请求，出于优化的考虑，要么就有这个图标，要么就禁止产生这个请求，在移动端下不希望产生favicon.ico的请求，可以在页面的’‘区域，加上如下代码实现屏蔽：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 简洁版 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"icon"</span> <span class="attr">href</span>=<span class="string">"data:;base64,="</span>/&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 完整版 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"icon"</span> <span class="attr">href</span>=<span class="string">"data:image/ico;base64,aWNv"</span>/&gt;</span></span><br></pre></td></tr></table></figure></p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>赏口饭吃吧客官老爷<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/images/zhifubao.png">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/images/weixin.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">new tags</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">解决方案</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">meta</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/dddd//" class="article-tag-list-link color5">dddd</a>
+        			<a href="/categories/HTML5//" class="article-tag-list-link color1">HTML5</a>
         		</li>
       		
 		</ul>
 	</div>
 
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACJElEQVR42u3ay07DMBAF0P7/T5dtJSDcO26Qah+voiihPl4MmcfjEa/ny3q98/36+/O/vXt9/3HHwsDA+FjG83Jd//AMn7DzvWFgYJzD+G0Ts+vkyfZ3/9gzBgYGRvxMcmflaDAwMDBaRvuJmae4GBgYGLMkdvbhOEtZb8zFMTAwPpCRF87+//qW/gYGBsZHMZ7lmpXbZo2EYlcYGBhbM96VoK4U/ZPP0KQ5ioGBsTej3fq7prPuCNkYGBh7M9qNJq2FqKAfFOaK38XAwNiOsTK0Ohv5yo8j+TsYGBjnMK7bh3mroG155sf0R/sTAwPjSEaevq6X3tojKE4UAwNjC0ZbrUrKYe0RJLD6XwIGBsZGjNkm2kZmHnbbA8XAwDiBkX+itcW4WUhdehcDA2NrxkqhPw+I+XWSxGJgYJzDmGW97VvtRtuhMQwMjDMZeatgFppnH6N1wMXAwNiIkRe/8k/D2RBGe/+HYQsMDIztGCuBsh3emiWxxfAHBgbGAYz1kNcG1jzpjZoHGBgYxzDyVuUsQF+v9l0MDAyMKHVsO6UjXvQWBgbGpoxnufIWZju6OmsbYGBgnMBYCXZt0T8PsiuJMQYGxq6MPMjOWpjrTYXo7DEwMA5gFGMNy6MV9RaTg8PAwMCIByDygn4xonpHwMXAwNiasZL05ulu8olZz4xgYGB8OKNtBszS16UR1et2JgYGxtaMpdTxTQ2A9SCOgYGxKeMLWA90cl1CT+oAAAAASUVORK5CYII=" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2016/06/15/HTML5-WebSocket介绍/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          HTML5 WebSocket介绍
+        
+      </div>
+    </a>
   
   
-    </div></section>
+    <a href="/2015/11/12/弹性盒模型的简单使用/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">弹性盒模型的简单使用</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -232,8 +363,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

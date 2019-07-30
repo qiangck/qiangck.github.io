@@ -6,19 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="//qiangck.club">
-  <title>Archives: 2019/4 | 贾小强的博客</title>
+  <title>HTML5 WebSocket介绍 | 贾小强的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="在痛苦中成长，在成长中感受痛苦">
-<meta name="keywords" content="javascript,nodejs,vue,react,html,webpack,fe,开发,Developer,js">
-<meta property="og:type" content="website">
-<meta property="og:title" content="贾小强的博客">
-<meta property="og:url" content="//qiangck.club/archives/2019/04/index.html">
+  <meta name="description" content="WebSocket是一种基于ws协议的技术，它可以建立全双工连接，常见于浏览器，但是不受平台限制，这里只介绍浏览器相关的内容。 浏览器支持   Chrome Firefox Internet Explorer Opera Safari       &amp;gt;16 &amp;gt;11 &amp;gt;10 &amp;gt;12.1 &amp;gt;7    请求  ws开头是普通的websocket连接，wss是安全的websoc">
+<meta name="keywords" content="websocket">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HTML5 WebSocket介绍">
+<meta property="og:url" content="//qiangck.club/2016/06/15/HTML5-WebSocket介绍/index.html">
 <meta property="og:site_name" content="贾小强的博客">
-<meta property="og:description" content="在痛苦中成长，在成长中感受痛苦">
+<meta property="og:description" content="WebSocket是一种基于ws协议的技术，它可以建立全双工连接，常见于浏览器，但是不受平台限制，这里只介绍浏览器相关的内容。 浏览器支持   Chrome Firefox Internet Explorer Opera Safari       &amp;gt;16 &amp;gt;11 &amp;gt;10 &amp;gt;12.1 &amp;gt;7    请求  ws开头是普通的websocket连接，wss是安全的websoc">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-04-12T16:02:38.896Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="贾小强的博客">
-<meta name="twitter:description" content="在痛苦中成长，在成长中感受痛苦">
+<meta name="twitter:title" content="HTML5 WebSocket介绍">
+<meta name="twitter:description" content="WebSocket是一种基于ws协议的技术，它可以建立全双工连接，常见于浏览器，但是不受平台限制，这里只介绍浏览器相关的内容。 浏览器支持   Chrome Firefox Internet Explorer Opera Safari       &amp;gt;16 &amp;gt;11 &amp;gt;10 &amp;gt;12.1 &amp;gt;7    请求  ws开头是普通的websocket连接，wss是安全的websoc">
   
     <link rel="alternative" href="/atom.xml" title="贾小强的博客" type="application/atom+xml">
   
@@ -144,71 +145,283 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-HTML5-WebSocket介绍" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/04/11/hello-world/" class="archive-article-date">
-  	<time datetime="2019-04-11T09:39:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-11</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/04/11/hello-world/">Hello World</a>
+    <h1 class="article-title" itemprop="name">
+      HTML5 WebSocket介绍
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2016/06/15/HTML5-WebSocket介绍/" class="archive-article-date">
+  	<time datetime="2016-06-15T08:50:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-06-15</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>WebSocket是一种基于ws协议的技术，它可以建立全双工连接，常见于浏览器，但是不受平台限制，这里只介绍浏览器相关的内容。</p>
+<h3 id="浏览器支持"><a href="#浏览器支持" class="headerlink" title="浏览器支持"></a>浏览器支持</h3><table>
+<thead>
+<tr>
+<th>Chrome</th>
+<th>Firefox</th>
+<th>Internet Explorer</th>
+<th>Opera</th>
+<th>Safari</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>  &gt;16</td>
+<td>&gt;11</td>
+<td>&gt;10</td>
+<td>&gt;12.1</td>
+<td>&gt;7</td>
+</tr>
+</tbody>
+</table>
+<h3 id="请求"><a href="#请求" class="headerlink" title="请求"></a>请求</h3><p>  <code>ws</code>开头是普通的websocket连接，wss是安全的websocket连接，类似于https。</p>
+<blockquote>
+<p><strong> 客户端到服务端 </strong><br>GET /echo HTTP/1.1<br>Upgrade: WebSocket<br>Connection: Upgrade<br>Host: 127.0.0.1:9999<br>Origin: <a href="http://127.0.0.0.1" target="_blank" rel="noopener">http://127.0.0.0.1</a></p>
+</blockquote>
+<blockquote>
+<p><strong> 服务端到客户端 </strong><br>HTTP/1.1 101 Web Socket Protocol Handshake<br>Upgrade: WebSocket<br>Connection: Upgrade<br>WebSocket-Origin: <a href="http://127.0.0.0.1" target="_blank" rel="noopener">http://127.0.0.0.1</a><br>WebSocket-Location: ws://127.0.0.1:9999</p>
+</blockquote>
+<h3 id="WebSocket-服务器端"><a href="#WebSocket-服务器端" class="headerlink" title="WebSocket 服务器端"></a>WebSocket 服务器端</h3><ul>
+<li>Kaazing WebSocket Gateway：一个 Java 实现的 WebSocket Server</li>
+<li>mod_pywebsocket：一个 Python 实现的 WebSocket Server</li>
+<li>Netty：一个 Java 实现的网络框架其中包括了对 WebSocket 的支持</li>
+<li>node.js：一个 Server 端的 JavaScript 框架提供了对 WebSocket 的支持</li>
+</ul>
+<h3 id="WebSocket-应用"><a href="#WebSocket-应用" class="headerlink" title="WebSocket 应用"></a>WebSocket 应用</h3><p>  1.创建一个 WebSocket 对象</p>
+  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> ws = <span class="keyword">new</span> WebSocket(<span class="string">"ws://127.0.0.1：9999"</span>, protocols);</span><br></pre></td></tr></table></figure>
+<p>  <strong>protocols</strong>【可选】:可以是一个单个的协议名字字符串或者包含多个协议名字字符串的数组。</p>
+<p>  一旦连接建立（也就是说 readyState 变成 OPEN），ws 将会告诉你服务器选择了哪一种协议。</p>
+<table>
+<thead>
+<tr>
+<th>状态readyState</th>
+<th>值</th>
+<th>介绍</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>  CONNECTING</td>
+<td>0</td>
+<td>连接还没开启。</td>
+</tr>
+<tr>
+<td>  OPEN</td>
+<td>1</td>
+<td>连接已开启并准备好进行通信</td>
+</tr>
+<tr>
+<td>  CLOSING</td>
+<td>2</td>
+<td>连接正在关闭的过程中</td>
+</tr>
+<tr>
+<td>  CLOSED</td>
+<td>3</td>
+<td>连接已经关闭，或者连接无法建立</td>
+</tr>
+</tbody>
+</table>
+<p>  2.发送数据到服务器</p>
+  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ws.onopen = <span class="function"><span class="keyword">function</span> (<span class="params">event</span>) </span>&#123; ws.send(<span class="string">"sucess"</span>); &#125;;</span><br></pre></td></tr></table></figure>
+<p>  建立连接的过程是异步的，而且可能会出错，因此刚刚连接就调用 send() 可能会失败。 我们可以设置 onopen 回调函数来确定什么时候连接成功。</p>
+<p>  3.使用 JSON 来传输接收数据</p>
+<p>  传输： 需要把要传的对象Object转成JSON，<code>JSON.stringify(obj)</code>;<br>  接收： 需要把接受的数据转成对象Object，<code>JSON.parse(JSON)</code>;</p>
+<p>  4.事件描述</p>
+<ul>
+<li>onmessage：一个用于消息事件的事件监听器，这一事件当有消息到达的时候该事件会触发。这个事件会被传入一个名为”message”的对象</li>
+<li>onopen：一个用于连接打开事件的事件监听器。当readyState的值变为OPEN的时候会触发该事件。该事件表明这个连接已经准备好接受和发送数据。这个监听器会接受一个名为”open”的事件对象</li>
+<li>onclose：用于监听连接关闭事件监听器。当WebSocket对象的readyState状态变为CLOSED时会出发该事件。这个监听器会接收一个叫close的事件对象</li>
+<li>onerror：当错误发生时用于监听error事件的事件监听器。会接受一个名为error的event对象</li>
+</ul>
+<h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><ul>
+<li>在 Gecko 9之前的版本上，UTF-8 文本里的某些非文本字符会导致连接断开，但是现在的 Gecko 已经解决了这个问题。</li>
+<li>不要将 WebSockets 用于混合内容环境；不要在 HTTPS 安全页面下创建非安全的 WebSocket 连接，反之亦然。有些浏览器对此是强行禁止的，例如 Firefox 8 和后续版本。</li>
+<li>从Gecko 6.0开始，构造器含有前缀，你需要调用 MozWebSocket()，直到 Gecko 8.0 才被支持 WebSocket。</li>
+<li>在 Gecko 11.0之前，用send()方法发送的数据被限制在16MB以内。现在数据大小可以达到2 GB。</li>
+</ul>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>赏口饭吃吧客官老爷<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/images/zhifubao.png">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/images/weixin.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">new tags</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">websocket</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/dddd//" class="article-tag-list-link color5">dddd</a>
+        			<a href="/categories/HTML5//" class="article-tag-list-link color1">HTML5</a>
         		</li>
       		
 		</ul>
 	</div>
 
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACIUlEQVR42u3aQXLCMAwFUO5/6fQAgPslp52J/LJiCMR+WWgkS69XfF1v17e762+Sz+/Pv+3CwMB4LONaXuvfJMjqi0jW/bAKBgbGAYxvC6/D4s7m1pEz3xsGBgZGsnA1QewljhgYGBjVgLuzZLUYxsDAwMiL2CRNrAbWXvGMgYFxGiM/df//z3/S38DAwHgU4ype91Jv2xUGBsZoxr1HadWBifUTyv/FwMA4hpE/dL98zVePvsfAwBjKKBy7F5F5eK22Pz+sjoGBMZqRj0TstyfzrffYGBgYUxm9w7XecMZWMF2vgoGBcQCjejS/cySXj1bkYAwMjNMYOy3G/dDZDP0YGBijGdWxiZ1CtDp+scZEpTIGBsYIRrXsrLY8q22APN+LerAYGBgjGL2xiV56l7+UXnKJgYExlREdZt3ahkw2Wi6PMTAwDmBUD7x6aVy+0XJyiYGBMZpxVwrYa0Dmg1/RvzAwMEYz8k3n7Orh2s7LwsDAOIHRG+fq/bI6fFZIUjEwMI5h9MrRXnjtBXoMDAyMnUQtL4YLWWo+soaBgTGUcRWv6vHceqPV538NxxgYGKMZvaGK6mjF/uBF3jrFwMCYysiDbF645kMYvVcWvWkMDIxxjLzqrcbvPNGsFrEYGBgY+dZ7ITIpg5vncBgYGBitVmV+N08xPxSxGBgYoxnVBO6ucjRvgv6SUGJgYIxm9EYcmodiG8nfzloYGBiPZfwAHBj6CBrzNZwAAAAASUVORK5CYII=" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2016/12/28/放弃npm拥抱yarn/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          放弃npm拥抱yarn
+        
+      </div>
+    </a>
   
   
-    </div></section>
+    <a href="/2016/04/03/favicon-ico重复请求问题/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">favicon.ico重复请求问题</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -232,8 +445,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
