@@ -6,20 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="//qiangck.club">
-  <title>Html5语音播报 | 贾小强的博客</title>
+  <title>Archives: 2019/8 | 贾小强的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="一个需求引发的实践  需求：供应商为了减少订单的丢失率，想在SaaS平台增加试试订单语音播报功能   技术方案：由后台使用第三方服务，将文案转化成音频文件并保存在服务器，生成音频地址返回给前端，前端使用Audio标签对音频文件进行播放。由于开发工期和使用三方服务的使用成本考虑，考虑由前端来处理语音播放问题，后台只处理订单信息。   最终方案：使用Html5 Web Speech API API使用">
-<meta name="keywords" content="HTML5">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Html5语音播报">
-<meta property="og:url" content="//qiangck.club/2019/12/31/Html5语音播报/index.html">
+  <meta name="description" content="在痛苦中成长，在成长中感受痛苦">
+<meta name="keywords" content="javascript,nodejs,vue,react,html,webpack,fe,开发,Developer,js">
+<meta property="og:type" content="website">
+<meta property="og:title" content="贾小强的博客">
+<meta property="og:url" content="//qiangck.club/archives/2019/08/index.html">
 <meta property="og:site_name" content="贾小强的博客">
-<meta property="og:description" content="一个需求引发的实践  需求：供应商为了减少订单的丢失率，想在SaaS平台增加试试订单语音播报功能   技术方案：由后台使用第三方服务，将文案转化成音频文件并保存在服务器，生成音频地址返回给前端，前端使用Audio标签对音频文件进行播放。由于开发工期和使用三方服务的使用成本考虑，考虑由前端来处理语音播放问题，后台只处理订单信息。   最终方案：使用Html5 Web Speech API API使用">
+<meta property="og:description" content="在痛苦中成长，在成长中感受痛苦">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-12-30T15:51:34.207Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Html5语音播报">
-<meta name="twitter:description" content="一个需求引发的实践  需求：供应商为了减少订单的丢失率，想在SaaS平台增加试试订单语音播报功能   技术方案：由后台使用第三方服务，将文案转化成音频文件并保存在服务器，生成音频地址返回给前端，前端使用Audio标签对音频文件进行播放。由于开发工期和使用三方服务的使用成本考虑，考虑由前端来处理语音播放问题，后台只处理订单信息。   最终方案：使用Html5 Web Speech API API使用">
+<meta name="twitter:title" content="贾小强的博客">
+<meta name="twitter:description" content="在痛苦中成长，在成长中感受痛苦">
   
     <link rel="alternative" href="/atom.xml" title="贾小强的博客" type="application/atom+xml">
   
@@ -141,78 +140,36 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-Html5语音播报" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+            
   
-    <h1 class="article-title" itemprop="name">
-      Html5语音播报
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2019" class="archive-year">2019</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2019/08/31/Html5语音播报/" class="archive-article-date">
+  	<time datetime="2019-08-31T07:49:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-31</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2019/08/31/Html5语音播报/">Html5语音播报</a>
     </h1>
   
 
-        
-        <a href="/2019/12/31/Html5语音播报/" class="archive-article-date">
-  	<time datetime="2019-12-31T07:49:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-31</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="一个需求引发的实践"><a href="#一个需求引发的实践" class="headerlink" title="一个需求引发的实践"></a>一个需求引发的实践</h3><p>  需求：供应商为了减少订单的丢失率，想在SaaS平台增加试试订单语音播报功能</p>
-<p>  技术方案：由后台使用第三方服务，将文案转化成音频文件并保存在服务器，生成音频地址返回给前端，前端使用Audio标签对音频文件进行播放。由于开发工期和使用三方服务的使用成本考虑，考虑由前端来处理语音播放问题，后台只处理订单信息。</p>
-<p>  最终方案：使用Html5 Web Speech API</p>
-<h3 id="API使用"><a href="#API使用" class="headerlink" title="API使用"></a>API使用</h3><p>  1、属性</p>
-<p>  SpeechSynthesis.paused 是否为暂停<br>  SpeechSynthesis.pending 是否有未完成播放<br>  SpeechSynthesis.speaking 是否正在播放</p>
-<p>  2、方法</p>
-<p>  cancel 取消<br>  getVoices 返回设备可播放语音列表<br>  pause 暂停<br>  resume 重启<br>  speak 播放，接收SpeechSynthesisUtterance实例</p>
-<h3 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h3><p>  1、首先简单封装一下使用方法</p>
-  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">VoicePlay</span> </span>&#123;</span><br><span class="line">  <span class="keyword">constructor</span> () &#123;</span><br><span class="line">    <span class="keyword">this</span>.volume = <span class="number">1</span></span><br><span class="line">    <span class="keyword">this</span>.speechSynthesis = <span class="built_in">window</span>.speechSynthesis</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">// 简单使用，配置默认写死</span></span><br><span class="line">  speak (text, callback) &#123;</span><br><span class="line">    <span class="keyword">let</span> utterance = <span class="keyword">new</span> SpeechSynthesisUtterance()</span><br><span class="line">    utterance.text = text</span><br><span class="line">    utterance.lang = <span class="string">'zh-CN'</span></span><br><span class="line">    utterance.volume = <span class="keyword">this</span>.volume</span><br><span class="line">    utterance.onend = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">      callback &amp;&amp; callback()</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 添加到队列</span></span><br><span class="line">    <span class="keyword">this</span>.speechSynthesis.speak(utterance)</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">// 播放</span></span><br><span class="line">  play (message, callback) &#123;</span><br><span class="line">    <span class="keyword">this</span>.speak(message, callback)</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 停止</span></span><br><span class="line">  stop () &#123;</span><br><span class="line">    <span class="keyword">this</span>.speechSynthesis.cancel()</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 静音</span></span><br><span class="line">  mute (value) &#123;</span><br><span class="line">    <span class="keyword">this</span>.volume = value || <span class="number">0</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">// 是否播放</span></span><br><span class="line">  isPlaying () &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span>.speechSynthesis.speaking</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>  2、由于订单信息可能会同时返回很多条，所以需要生成一个队列来进行逐条播放</p>
-  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> queues = []</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">voicePlay</span> (<span class="params">index</span>) </span>&#123;</span><br><span class="line">  <span class="comment">// 显示模态窗</span></span><br><span class="line">  VoicePlay.play(<span class="comment">/* 需要播放的内容 */</span>, () =&gt; &#123;</span><br><span class="line">    <span class="keyword">if</span> (queues[index + <span class="number">1</span>]) &#123;</span><br><span class="line">      voicePlay(index + <span class="number">1</span>)</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      VoicePlay.stop()</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 关闭模态窗</span></span><br><span class="line">  &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>  3、加个定时器轮询接口，拿订单数据，插入到队列中，如果有新消息停止播放清空队列重新播放新消息。</p>
-<h3 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h3><p>  简单的消息播放实现了，SpeechSynthesis属性其实就是调用本地TTS语音引擎进行播放的，如果window系统不能正常播放，很有可能是本地卸载了或不存在要播放的语言包。SpeechSynthesis属性的兼容还可以，除了IE浏览器不支持外，其他大部分的浏览器都是支持的，如果想支持IE浏览器，可以使用ActiveX控件进行支持或者使用百度的接口。</p>
-  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"http://tts.baidu.com/text2audio?lan=zh&amp;ie=UTF-8&amp;text="</span> + <span class="built_in">encodeURI</span>(text)</span><br></pre></td></tr></table></figure>
-      
-
-      
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>赏口饭吃吧客官老爷<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="/images/zhifubao.png">
-                      <span class="reward-type">支付宝</span>
-                    </div>
-                    
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="/images/weixin.png">
-                      <span class="reward-type">微信</span>
-                    </div>
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
-        </div>
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -224,7 +181,7 @@
 		</ul>
 	</div>
 
-      
+          
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
@@ -237,104 +194,17 @@
 	</div>
 
 
-      
-
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
         </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACNklEQVR42u3azY6DMAxF4b7/SzPSrCrNEM61aSXik1VFoeTrwop/Xi+8jt+1vvJ+/ez+9+t/P589e9uSIUPGYxnHcq1fw+8hv09+85QqQ4aMAYx1kOXhNQ24nHSxZxkyZMhYvowEx3W4JCQZMmTI4AyyIX7g40/JkCFDRi3JvPfwV0uAZciQMYGRNga++fmD/Q0ZMmQ8hHG017rERgpw/f3IkCFjb0Y69LAOhbV2Zq3ZcJGLy5AhYyMGD4J33V8bArsI7jJkyBjAuKGMVSq3dYprMmTImMNIK1ed4+O91y/+dBkyZGzHWJe9am2DfvpKAvGLV+9kyJDxcEatJ9gv7pMttrqyMmTI2IIR9xAa41+EmoZgGTJkTGDEJfh2opsCWrm4DBkytmDwkFq7Jw3caVtUhgwZ0xi1BgAPu7UBDnQolCFDxgBGrXyfpr48EMeNUhkyZIxk8CSWNxh4wC0msTJkyBjDqAH6AZcfEE+TWBkyZAxgpOMUacmMP8u/jfNpGTJkPJDBj3Sdkhkv8fPALUOGjDmMdDCLD1KkpLRRcXE0lCFDxkYM0pLk6Wh60Oy8Jd6KDBkyHss4wlVLRNfh9YbhVxkyZGzN4IsPRvCN8kmJYi4uQ4aMjRg8yHYSWl5QS5NkGTJkzGGk7ca00MbLcMU0W4YMGTKWqWMacMlBMG0zyJAhQwYve3W2zhucMmTImMngSSwPyukYR/oX/3M0lCFDxqaMtDHAfzptQ35iREOGDBkPZ/wAeIajia/hlWoAAAAASUVORK5CYII=" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
-      <div class="clearfix"></div>
-    </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-  
-<nav id="article-nav">
   
   
-    <a href="/2018/12/20/前端异常监控思考/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">前端异常监控思考</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-  
-  
+    </div></section>
   
 
-  
-
-  
-
-  
+    
 
 
           </div>
@@ -359,8 +229,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: true,
-		isArchive: false,
+		isPost: false,
+		isArchive: true,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
@@ -422,15 +292,15 @@
               </li>
             
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">websocket</a>
-              </li>
-            
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">audio</a>
               </li>
             
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">vidoe</a>
+              </li>
+            
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">websocket</a>
               </li>
             
               <li class="article-tag-list-item">
