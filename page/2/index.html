@@ -6,13 +6,13 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="//qiangck.club">
-  <title>Category: default | 贾小强的博客</title>
+  <title>贾小强的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="在痛苦中成长，在成长中感受痛苦">
 <meta name="keywords" content="javascript,nodejs,vue,react,html,webpack,fe,开发,Developer,js">
 <meta property="og:type" content="website">
 <meta property="og:title" content="贾小强的博客">
-<meta property="og:url" content="//qiangck.club/categories/default/index.html">
+<meta property="og:url" content="//qiangck.club/page/2/index.html">
 <meta property="og:site_name" content="贾小强的博客">
 <meta property="og:description" content="在痛苦中成长，在成长中感受痛苦">
 <meta property="og:locale" content="zh-CN">
@@ -142,35 +142,49 @@
           <div id="js-content" class="content-ll">
             
   
-  
+    <article id="post-博客的诞生" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2015" class="archive-year">2015</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2015/09/24/博客的诞生/" class="archive-article-date">
-  	<time datetime="2015-09-24T04:05:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-09-24</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
     <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/09/24/博客的诞生/">博客的诞生</a>
+      <a class="article-title" href="/2015/09/24/博客的诞生/">博客的诞生</a>
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
+        
+        <a href="/2015/09/24/博客的诞生/" class="archive-article-date">
+  	<time datetime="2015-09-24T04:05:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-09-24</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>一时兴起建立了此博客，本人是个前端小白，技术不佳，就想留些东西给未来的自己（大牛勿喷哈）。本博客使用了Hexo框架，发布在Github page上面,建立博客属于个人爱好,请勿商业使用,也请转载的朋友请标注好出处和相关内容。</p>
+<h3 id="域名的注册"><a href="#域名的注册" class="headerlink" title="域名的注册"></a>域名的注册</h3><p>  我的域名是在阿里巴巴收购万网后搞活动购买的,当时只要了我20大洋,这个域名我一直搁置了将近一年的时间才开始想弄个博客的。域名的话随便买个就好了,也不是很贵的。</p>
+<h3 id="注册GitHub账号"><a href="#注册GitHub账号" class="headerlink" title="注册GitHub账号"></a>注册GitHub账号</h3><p>  <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>的注册非常简单：<br>  Pick a username:用户名<br>  Your email:邮箱<br>  Create a password:密码<br>  点击Sign up for GitHub注册</p>
+<h3 id="使用msysgit管理Github"><a href="#使用msysgit管理Github" class="headerlink" title="使用msysgit管理Github"></a>使用msysgit管理Github</h3><blockquote>
+<p>msysgit是 Git 版本控制系统在 Windows 下的版本。</p>
+</blockquote>
+<p>  安装与设置<br>  下载<a href="https://git-for-windows.github.io/" target="_blank" rel="noopener">msysgit</a>安装非常简单。点击这里<a href="https://jingyan.baidu.com/article/90895e0fb3495f64ed6b0b50.html" target="_blank" rel="noopener">百度百科</a>，与Github绑定，使用msysgit找到系统[用户名]文件夹 &gt; .ssh文件夹。</p>
+<blockquote>
+<p>例：C:\Users\Administrator.ssh</p>
+</blockquote>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">[~/.ssh]$ ssh-keygen -t rsa</span><br><span class="line">Generating public/private rsa key pair. Enter file <span class="keyword">in</span> <span class="built_in">which</span> to save the key (/home/tom/.ssh/id_rsa): [Enter]</span><br><span class="line">Enter passphrase (empty <span class="keyword">for</span> no passphrase): &lt;输入key的密码，或直接按下enter使用空密码&gt;</span><br><span class="line">Enter same passphrase again: &lt;再输入一次密码&gt;</span><br><span class="line">Your identification has been saved <span class="keyword">in</span> /home/tom/.ssh/id_rsa.</span><br><span class="line">Your public key has been saved <span class="keyword">in</span> /home/tom/.ssh/id_rsa.pub.</span><br><span class="line">The key fingerprint is:50:43:77:c6:97:af:61:82:dc:ea:9b:6b:67:d4:1b:61 tom@volcano</span><br></pre></td></tr></table></figure>
+<p>  可以直接回车（默认的密码为空）,用编辑器找到ssh文件夹下面的id_rsa.pub，其中id_rsa.pub是公钥，而id_rsa则是私钥,将公钥粘贴到你github帐号中的SSH Keys中。</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Hi han1202012! You<span class="string">'ve successfully authenticated, but GitHub does not provide shell access。</span></span><br></pre></td></tr></table></figure>
+<p>  就说明配置成功, 可以连接上GitHub。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
@@ -183,17 +197,43 @@
 	</div>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2015/09/24/博客的诞生/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-  
-    </div></section>
-  
 
-    
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+  
+    <nav id="page-nav">
+      <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+    </nav>
+  
 
 
           </div>
@@ -217,11 +257,11 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: false,
+		isHome: true,
 		isPost: false,
 		isArchive: false,
 		isTag: false,
-		isCategory: true,
+		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
 		root: "/",

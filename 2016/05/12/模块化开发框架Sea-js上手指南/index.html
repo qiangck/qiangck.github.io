@@ -6,19 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="//qiangck.club">
-  <title>Category: default | 贾小强的博客</title>
+  <title>模块化开发框架Sea.js上手指南 | 贾小强的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="在痛苦中成长，在成长中感受痛苦">
+  <meta name="description" content="Sea.js的目的是追求简单的代码书写和组织方式,Sea.js并没有过多功能而是主要对前端程序的部署结构作出约束,下面我们就来看一下JavaScript的模块化开发框架Sea.js上手指南:    Sea.js所有源码都存放在 GitHub 上：https://github.com/seajs/examples，目录结构为： 12345678910examples/ |-- sea-modu">
 <meta name="keywords" content="javascript,nodejs,vue,react,html,webpack,fe,开发,Developer,js">
-<meta property="og:type" content="website">
-<meta property="og:title" content="贾小强的博客">
-<meta property="og:url" content="//qiangck.club/categories/default/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="模块化开发框架Sea.js上手指南">
+<meta property="og:url" content="//qiangck.club/2016/05/12/模块化开发框架Sea-js上手指南/index.html">
 <meta property="og:site_name" content="贾小强的博客">
-<meta property="og:description" content="在痛苦中成长，在成长中感受痛苦">
+<meta property="og:description" content="Sea.js的目的是追求简单的代码书写和组织方式,Sea.js并没有过多功能而是主要对前端程序的部署结构作出约束,下面我们就来看一下JavaScript的模块化开发框架Sea.js上手指南:    Sea.js所有源码都存放在 GitHub 上：https://github.com/seajs/examples，目录结构为： 12345678910examples/ |-- sea-modu">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="//qiangck.club/images/pasted-5.png">
+<meta property="og:updated_time" content="2020-01-01T02:09:13.793Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="贾小强的博客">
-<meta name="twitter:description" content="在痛苦中成长，在成长中感受痛苦">
+<meta name="twitter:title" content="模块化开发框架Sea.js上手指南">
+<meta name="twitter:description" content="Sea.js的目的是追求简单的代码书写和组织方式,Sea.js并没有过多功能而是主要对前端程序的部署结构作出约束,下面我们就来看一下JavaScript的模块化开发框架Sea.js上手指南:    Sea.js所有源码都存放在 GitHub 上：https://github.com/seajs/examples，目录结构为： 12345678910examples/ |-- sea-modu">
+<meta name="twitter:image" content="//qiangck.club/images/pasted-5.png">
   
     <link rel="alternative" href="/atom.xml" title="贾小强的博客" type="application/atom+xml">
   
@@ -140,60 +143,194 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-模块化开发框架Sea-js上手指南" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2015" class="archive-year">2015</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2015/09/24/博客的诞生/" class="archive-article-date">
-  	<time datetime="2015-09-24T04:05:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-09-24</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/09/24/博客的诞生/">博客的诞生</a>
+    <h1 class="article-title" itemprop="name">
+      模块化开发框架Sea.js上手指南
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/default//" class="article-tag-list-link color3">default</a>
-        		</li>
-      		
-		</ul>
-	</div>
+        
+        <a href="/2016/05/12/模块化开发框架Sea-js上手指南/" class="archive-article-date">
+  	<time datetime="2016-05-12T02:05:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-05-12</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<blockquote>
+<blockquote>
+<p>Sea.js的目的是追求简单的代码书写和组织方式,Sea.js并没有过多功能而是主要对前端程序的部署结构作出约束,下面我们就来看一下JavaScript的模块化开发框架Sea.js上手指南:</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>Sea.js所有源码都存放在 GitHub 上：<a href="https://github.com/seajs/examples，目录结构为：" target="_blank" rel="noopener">https://github.com/seajs/examples，目录结构为：</a></p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">examples/</span><br><span class="line"> |-- sea-modules   存放 seajs、jquery 等文件，这也是模块的部署目录</span><br><span class="line"> |-- static      存放各个项目的 js、css 文件</span><br><span class="line"> |   |-- hello</span><br><span class="line"> |   |-- lucky</span><br><span class="line"> |   `-- todo</span><br><span class="line"> `-- app       存放 html 等文件</span><br><span class="line"><span class="code">    |-- hello.html</span></span><br><span class="line"><span class="code">    |-- lucky.html</span></span><br><span class="line"><span class="code">    `-- todo.html</span></span><br></pre></td></tr></table></figure>
+<h3 id="引入seajs主文件"><a href="#引入seajs主文件" class="headerlink" title="引入seajs主文件"></a>引入seajs主文件</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">&lt;script src=<span class="string">"js/sea.js"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br><span class="line">&lt;script type=<span class="string">"text/javascript"</span>&gt;</span><br><span class="line">  <span class="comment">// seajs配置项</span></span><br><span class="line">  seajs.config(&#123;</span><br><span class="line">    <span class="comment">//设置基本的JS路径(引用外部文件的根目录)</span></span><br><span class="line">    base:<span class="string">"./js"</span>,</span><br><span class="line">    <span class="comment">//设置别名(方便后面引用使用)</span></span><br><span class="line">    alias:&#123;</span><br><span class="line">      <span class="string">"jQuery"</span>:<span class="string">"jquery.js"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="comment">//路径配置(跨目录调用或者目录比较深时使用)</span></span><br><span class="line">    paths: &#123;</span><br><span class="line">      <span class="string">'jQuery'</span>: <span class="string">'http://libs.baidu.com/jquery/2.0.0/'</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="comment">//设置文件编码</span></span><br><span class="line">    charset:<span class="string">"utf-8"</span>,</span><br><span class="line">    <span class="comment">//预加载文件</span></span><br><span class="line">    preload:[<span class="string">'jQuery'</span>]</span><br><span class="line">  &#125;);</span><br><span class="line">  <span class="comment">// 引用主入口文件</span></span><br><span class="line">  seajs.use([<span class="string">'main'</span>,<span class="string">'jQuery'</span>],<span class="function"><span class="keyword">function</span>(<span class="params">e,$</span>)</span>&#123;</span><br><span class="line">    <span class="comment">//回调函数</span></span><br><span class="line">    alert(<span class="string">"全部加载完成"</span>);</span><br><span class="line">  &#125;);</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="seajs主入口文件-main"><a href="#seajs主入口文件-main" class="headerlink" title="seajs主入口文件(main)"></a>seajs主入口文件(main)</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">define(<span class="function"><span class="keyword">function</span>(<span class="params">require, exports, module</span>) </span>&#123;</span><br><span class="line">  <span class="comment">// 主入口文件引入其他文件依赖</span></span><br><span class="line">  <span class="comment">//var testReQ = require('index');</span></span><br><span class="line">   <span class="keyword">var</span> testReQ = <span class="built_in">require</span>.async(<span class="string">'index'</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">      <span class="comment">//异步加载回调</span></span><br><span class="line">      alert(<span class="string">"我是异步加载的index的回调函数"</span>);</span><br><span class="line">   &#125;);</span><br><span class="line">  <span class="comment">// 运行index释放的接口方法</span></span><br><span class="line">  <span class="comment">// testReQ.testInit();</span></span><br><span class="line"> </span><br><span class="line">  <span class="comment">// 运行index释放的接口方法(module)</span></span><br><span class="line">  testReQ.textFun();</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h3 id="seajs依赖文件-index"><a href="#seajs依赖文件-index" class="headerlink" title="seajs依赖文件(index)"></a>seajs依赖文件(index)</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">define(<span class="function"><span class="keyword">function</span>(<span class="params">require, exports, module</span>) </span>&#123;</span><br><span class="line">  <span class="comment">// 对外释放接口</span></span><br><span class="line">  exports.testInit = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    alert(<span class="string">"我是一个接口"</span>);</span><br><span class="line">  &#125;;</span><br><span class="line">  <span class="comment">// 如果需要释放大量接口，可以使用module</span></span><br><span class="line">  <span class="keyword">var</span> testObj = &#123;</span><br><span class="line">    name:<span class="string">"qiangck"</span>,</span><br><span class="line">    sex:<span class="string">"man"</span>,</span><br><span class="line">    textFun:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">      alert(<span class="string">"我是一个使用module.exports的对象方法"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">// module.exports接收obj对象</span></span><br><span class="line">  <span class="built_in">module</span>.exports = testObj;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h3 id="文件的加载顺序"><a href="#文件的加载顺序" class="headerlink" title="文件的加载顺序"></a>文件的加载顺序</h3><p><img src="/images/pasted-5.png" alt="upload successful"></p>
+<p>下面我们从 hello.html 入手，来瞧瞧使用 Sea.js 如何组织代码。</p>
+<h3 id="在页面中加载模块"><a href="#在页面中加载模块" class="headerlink" title="在页面中加载模块"></a>在页面中加载模块</h3><p>在 hello.html 页尾，通过 script 引入 sea.js 后，有一段配置代码：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// seajs 的简单配置</span></span><br><span class="line">seajs.config(&#123;</span><br><span class="line"> base: <span class="string">"../sea-modules/"</span>,</span><br><span class="line"> alias: &#123;</span><br><span class="line">  <span class="string">"jquery"</span>: <span class="string">"jquery/jquery/1.10.1/jquery.js"</span></span><br><span class="line"> &#125;</span><br><span class="line">&#125;)</span><br><span class="line"><span class="comment">// 加载入口模块</span></span><br><span class="line">seajs.use(<span class="string">"../static/hello/src/main"</span>)</span><br></pre></td></tr></table></figure>
+<p>sea.js 在下载完成后，会自动加载入口模块。页面中的代码就这么简单。</p>
+<h3 id="模块代码"><a href="#模块代码" class="headerlink" title="模块代码"></a>模块代码</h3><p>这个小游戏有两个模块 spinning.js 和 main.js，遵循统一的写法：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 所有模块都通过 define 来定义</span></span><br><span class="line">define(<span class="function"><span class="keyword">function</span>(<span class="params">require, exports, module</span>) </span>&#123;</span><br><span class="line">  <span class="comment">// 通过 require 引入依赖</span></span><br><span class="line">  <span class="keyword">var</span> $ = <span class="built_in">require</span>(<span class="string">'jquery'</span>);</span><br><span class="line">  <span class="keyword">var</span> Spinning = <span class="built_in">require</span>(<span class="string">'./spinning'</span>);</span><br><span class="line">  <span class="comment">// 通过 exports 对外提供接口</span></span><br><span class="line">  exports.doSomething = ...</span><br><span class="line">  <span class="comment">// 或者通过 module.exports 提供整个接口</span></span><br><span class="line">  <span class="built_in">module</span>.exports = ...</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>上面就是 Sea.js 推荐的 CMD 模块书写格式。如果你有使用过 Node.js，一切都很自然。</p>
 
+      
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>赏口饭吃吧客官老爷<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/images/zhifubao.png">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/images/weixin.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACvklEQVR42u3cQW4bMQwFUN//0i7QVQHX4/+pYeoCTyvDsRW9WYgMSeTxiNfz93r3/p8/fffJ5Fuv332+rMfGwsPDwxsd/d16PfS7Q8x+es2+3uf6zHh4eHjbvGS72XGTq799NMmZ8fDw8L6Bd5IE5w8iSdbx8PDw/hdeXrBoywdtEMLDw8P7Bl5SjLguBySPrP3u9eubay14eHh4MW/74t54vdjfw8PDwzvoqrfr/MpOGmDFefDw8PAWeLPCwXbjapbcD58ZHh4eXslrr+C80bU3yFXshoeHh7fAS7Y+CQb5sfKrP39keHh4eBu8ttV0ctCTYJNnyMPaMx4eHl7Ja9PcJNokBY62+Jv8lg8FXDw8PLwFXvHlMsE9aYO1QQUPDw9vj9cOmLYNqvP328AT/fWAh4eHd8xrL/STcsNdAaMYdMDDw8O7lZcf6HxUKy/OJmEjasvh4eHhLfNOLu5kh3zn2TDBXz6Jh4eH9+O8/ChtCaMNGMNCMx4eHt4CL7nc29Go8yZW3pwr+lx4eHh4N/Hyi3U2jJUXF/JBq+IMeHh4eMu8tlmVFynyBH3W+oqKEXh4eHi38h7xaosLecI9Wx9CCx4eHt4ary0ctMXfttgxK44M4xIeHh7epEsV/UOTFjNLjltGlNzj4eHhLfDy9nwLaANAfoa8EIyHh4f387xZ0nwSWtrUfJhY4+Hh4R3wkvZS2/RKyr55Q+ukCIKHh4e3zcuv7BZ5vmfbEsPDw8Pb4D3LNSvRFmNS5eP4UOzAw8PDW+DdNt4Ufz5vdM0GEfLCCh4eHt4JL28v5S3883ZXG3iG0Q8PDw9vYWhgVpDNH1b+Thu68PDw8L6NN0t/c3A+dvBhHzw8PLx/ypuNW92bKC+m1Hh4eHgLxYi7xq3aoaukwPH2bHh4eHgLvJMGWFs+mIWBe8+Ah4eHd8D7BRcq5CniVNLzAAAAAElFTkSuQmCC" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2016/06/15/HTML5-WebSocket介绍/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          HTML5 WebSocket介绍
+        
+      </div>
+    </a>
   
   
-    </div></section>
+    <a href="/2016/04/03/favicon-ico重复请求问题/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">favicon.ico重复请求问题</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -218,10 +355,10 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
-		isCategory: true,
+		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
 		root: "/",
