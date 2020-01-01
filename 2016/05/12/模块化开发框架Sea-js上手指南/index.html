@@ -8,19 +8,19 @@
   <link rel="dns-prefetch" href="//qiangck.club">
   <title>模块化开发框架Sea.js上手指南 | 贾小强的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Sea.js的目的是追求简单的代码书写和组织方式,Sea.js并没有过多功能而是主要对前端程序的部署结构作出约束,下面我们就来看一下JavaScript的模块化开发框架Sea.js上手指南:    Sea.js所有源码都存放在 GitHub 上：https://github.com/seajs/examples，目录结构为： 12345678910examples/ |-- sea-modu">
+  <meta name="description" content="Sea.js的目的是追求简单的代码书写和组织方式,Sea.js并没有过多功能而是主要对前端程序的部署结构作出约束,下面我们就来看一下JavaScript的模块化开发框架Sea.js上手指南:  Sea.js所有源码都存放在 GitHub 上：https://github.com/seajs/examples，目录结构为： 12345678910examples/ |-- sea-modules">
 <meta name="keywords" content="javascript,nodejs,vue,react,html,webpack,fe,开发,Developer,js">
 <meta property="og:type" content="article">
 <meta property="og:title" content="模块化开发框架Sea.js上手指南">
 <meta property="og:url" content="//qiangck.club/2016/05/12/模块化开发框架Sea-js上手指南/index.html">
 <meta property="og:site_name" content="贾小强的博客">
-<meta property="og:description" content="Sea.js的目的是追求简单的代码书写和组织方式,Sea.js并没有过多功能而是主要对前端程序的部署结构作出约束,下面我们就来看一下JavaScript的模块化开发框架Sea.js上手指南:    Sea.js所有源码都存放在 GitHub 上：https://github.com/seajs/examples，目录结构为： 12345678910examples/ |-- sea-modu">
+<meta property="og:description" content="Sea.js的目的是追求简单的代码书写和组织方式,Sea.js并没有过多功能而是主要对前端程序的部署结构作出约束,下面我们就来看一下JavaScript的模块化开发框架Sea.js上手指南:  Sea.js所有源码都存放在 GitHub 上：https://github.com/seajs/examples，目录结构为： 12345678910examples/ |-- sea-modules">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="//qiangck.club/images/pasted-5.png">
-<meta property="og:updated_time" content="2020-01-01T02:09:13.793Z">
+<meta property="og:updated_time" content="2020-01-01T02:12:45.938Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="模块化开发框架Sea.js上手指南">
-<meta name="twitter:description" content="Sea.js的目的是追求简单的代码书写和组织方式,Sea.js并没有过多功能而是主要对前端程序的部署结构作出约束,下面我们就来看一下JavaScript的模块化开发框架Sea.js上手指南:    Sea.js所有源码都存放在 GitHub 上：https://github.com/seajs/examples，目录结构为： 12345678910examples/ |-- sea-modu">
+<meta name="twitter:description" content="Sea.js的目的是追求简单的代码书写和组织方式,Sea.js并没有过多功能而是主要对前端程序的部署结构作出约束,下面我们就来看一下JavaScript的模块化开发框架Sea.js上手指南:  Sea.js所有源码都存放在 GitHub 上：https://github.com/seajs/examples，目录结构为： 12345678910examples/ |-- sea-modules">
 <meta name="twitter:image" content="//qiangck.club/images/pasted-5.png">
   
     <link rel="alternative" href="/atom.xml" title="贾小强的博客" type="application/atom+xml">
@@ -164,11 +164,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <blockquote>
-<blockquote>
-<blockquote>
 <p>Sea.js的目的是追求简单的代码书写和组织方式,Sea.js并没有过多功能而是主要对前端程序的部署结构作出约束,下面我们就来看一下JavaScript的模块化开发框架Sea.js上手指南:</p>
-</blockquote>
-</blockquote>
 </blockquote>
 <p>Sea.js所有源码都存放在 GitHub 上：<a href="https://github.com/seajs/examples，目录结构为：" target="_blank" rel="noopener">https://github.com/seajs/examples，目录结构为：</a></p>
 <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">examples/</span><br><span class="line"> |-- sea-modules   存放 seajs、jquery 等文件，这也是模块的部署目录</span><br><span class="line"> |-- static      存放各个项目的 js、css 文件</span><br><span class="line"> |   |-- hello</span><br><span class="line"> |   |-- lucky</span><br><span class="line"> |   `-- todo</span><br><span class="line"> `-- app       存放 html 等文件</span><br><span class="line"><span class="code">    |-- hello.html</span></span><br><span class="line"><span class="code">    |-- lucky.html</span></span><br><span class="line"><span class="code">    `-- todo.html</span></span><br></pre></td></tr></table></figure>
